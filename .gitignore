@@ -1,0 +1,11 @@
+# Archivos y carpetas a ignorar por Git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
