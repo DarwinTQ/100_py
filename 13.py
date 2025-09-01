@@ -1,21 +1,20 @@
-# 10 dividido entre 3 es 3 con un resto de 1.
-resto = 10 % 3  # El resultado es 1
+# 1. Inicializamos el contador antes del bucle
+contador = 1
 
-# 12 dividido entre 2 es 6 con un resto de 0.
-# Si el módulo de un número entre 2 es 0, el número es par.
-es_par = 12 % 2 # El resultado es 0
+# 2. La condición se comprueba en cada repetición
+while contador <= 5:
+    print(f"El contador vale: {contador}")
+    # 3. ¡MUY IMPORTANTE! Actualizamos el contador dentro del bucle
+    # Si olvidamos esta línea, el bucle será infinito.
+    contador = contador + 1
 
-# 10 dividido entre 3 es 3.333...
-division_entera = 10 // 3 # El resultado es 3
+print("Fin del programa.")
 
-# 2 elevado a la potencia de 3 (2 * 2 * 2)
-potencia = 2 ** 3 # El resultado es 8
-#----------------------------------------
-n = 3661
-hor = n//60
-min = hor%60
-seg  = n%60
-print(hor)
-print(min)
-print(seg)
-print(f'{n} segundos equivale a {hor} horas, {min} minutos, y {seg} segundos')
+
+###########################################
+cuenta_atras = 10
+while cuenta_atras >= 0:
+    print(f'cuenta_atras: {cuenta_atras}')
+    cuenta_atras -= 1  # Esto es equivalente a cuenta_atras = cuenta_atras - 1
+
+print("Despegue!!!")
