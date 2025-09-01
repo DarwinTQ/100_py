@@ -1,14 +1,25 @@
-temperatura = 32
 
-# La condición es: temperatura > 30
-# Como 32 es mayor que 30, la condición es True y el print se ejecuta.
-if temperatura > 30:
-    print("¡Hace calor! No olvides usar protector solar.")
+# nota = 85
 
-print("Este mensaje se muestra siempre, sin importar la temperatura.")
+# if nota >= 90:
+#     print("Calificación: A")
+# elif nota >= 80:
+#     # Este bloque se ejecuta porque (85 >= 90) es False, pero (85 >= 80) es True.
+#     print("Calificación: B")
+# elif nota >= 70:
+#     print("Calificación: C")
+# else:
+#     print("Calificación: D")
 
-##-------------------------------------
-calificacion = int(input("Ingresa tu calificación (0-100): "))
 
-if calificacion >= 60:
-    print("¡Felicidades! Has aprobado el curso.")
+#######
+hora = int(input("Ingresa la hora actual (0-23): "))
+#Si la hora está entre 6 y 11 (inclusive), muestra "¡Buenos días!".
+if 6 <= hora <= 11:
+    print("¡Buenos días!")
+elif 12 <= hora <= 18:
+    print("¡Buenas tardes!")
+elif 19 <= hora <= 23:
+    print("¡Buenas noches!")
+else:
+    print("Hora no válida.")
