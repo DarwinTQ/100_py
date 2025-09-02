@@ -1,14 +1,11 @@
-temperatura = 32
+# 'numero' es una variable temporal que tomará el valor de cada elemento de la secuencia.
+# En la primera vuelta valdrá 0, en la segunda 1, y así sucesivamente.
+# for numero in range(5):
+#     print(f"Vuelta número: {numero}")
 
-# La condición es: temperatura > 30
-# Como 32 es mayor que 30, la condición es True y el print se ejecuta.
-if temperatura > 30:
-    print("¡Hace calor! No olvides usar protector solar.")
 
-print("Este mensaje se muestra siempre, sin importar la temperatura.")
-
-##-------------------------------------
-calificacion = int(input("Ingresa tu calificación (0-100): "))
-
-if calificacion >= 60:
-    print("¡Felicidades! Has aprobado el curso.")
+######
+n = int(input("Ingresa un número entero positivo: "))
+i =1
+for i in range(11):
+    print(f"La multiplicación de :{n} x {i} = {n*i}")

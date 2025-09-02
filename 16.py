@@ -1,14 +1,16 @@
-edad = 17
+# frase = "Hola"
 
-if edad >= 18:
-    print("Acceso permitido al área de adultos.")
-else:
-    # Este bloque se ejecuta porque la condición (17 >= 18) es False.
-    print("Acceso denegado. Esta área es solo para mayores de edad.")
+# # La variable 'letra' tomará el valor 'H', luego 'o', luego 'l', y finalmente 'a'.
+# for letra in frase:
+#     print(letra)
 
-#-------------------------------------------------
-numero = int(input("Ingresa tu calificación: "))
-if numero >60:
-    print('¡Felicidades! Has aprobado')
-else:
-    print('Necesitas estudiar más. Has reprobado.')
+##############################
+
+frase = input("Ingresa una frase: ")
+contador_vocales =0
+
+for letra in frase:
+    if letra.lower() in 'aeiou':
+        contador_vocales +=1
+
+print(f"Cantidad de vocales en la frase: {contador_vocales}")
